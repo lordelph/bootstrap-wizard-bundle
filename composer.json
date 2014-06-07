@@ -1,5 +1,5 @@
 {
-    "name":        "javihernandezgil/bootstrap-wizard-bundle",
+    "name":        "javihgil/bootstrap-wizard-bundle",
     "type":        "symfony-bundle",
     "description": "JhgBootstrapWizardBundle integrates Twitter Bootstrap Wizard in SF2",
     "keywords":    ["symfony", "bundle", "bootstrap", "wizard"],
@@ -7,8 +7,8 @@
 
     "authors": [
         {
-            "name": "Javi Hernández Gil",
-            "homepage": "http://github.com/javihernandezgil"
+            "name": "Javi H. Gil",
+            "homepage": "http://github.com/javihgil"
         }
     ],
 
