@@ -1,14 +1,14 @@
 {
-    "name":        "javihgil/bootstrap-wizard-bundle",
+    "name":        "lordelph/bootstrap-wizard-bundle",
     "type":        "symfony-bundle",
-    "description": "JhgBootstrapWizardBundle integrates Twitter Bootstrap Wizard in SF2",
+    "description": "ElphinBootstrapWizardBundle integrates Twitter Bootstrap Wizard in SF2",
     "keywords":    ["symfony", "bundle", "bootstrap", "wizard"],
     "license":     "MIT License",
 
     "authors": [
         {
-            "name": "Javi H. Gil",
-            "homepage": "http://github.com/javihgil"
+            "name": "Paul Dixon",
+            "homepage": "http://github.com/lordelph"
         }
     ],
 
@@ -21,9 +21,9 @@
 
     "autoload": {
         "psr-0": {
-            "Jhg\\BootstrapWizardBundle": ""
+            "Elphin\\BootstrapWizardBundle": ""
         }
     },
-    
-    "target-dir": "Jhg/BootstrapWizardBundle"
+
+    "target-dir": "Elphin/BootstrapWizardBundle"
 }
