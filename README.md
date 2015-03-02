@@ -1,20 +1,66 @@
 Twitter Bootstrap Wizard
 ============================
 
-This bundle provides the <a href="https://github.com/VinceG/twitter-bootstrap-wizard">Bootstrap Wizard</a> in Symfony friendly form. The bundle
+This bundle provides the <a href="https://github.com/VinceG/twitter-bootstrap-wizard">Bootstrap Wizard</a> by Vincent Gabriel in Symfony friendly form. The bundle
 itself is an adaptation of <a href="https://github.com/javihgil/bootstrap-wizard-bundle">javihgil/bootstrap-wizard-bundle</a>, this fork is simply more to date.
 
 This Twitter Bootstrap plugin builds a wizard using a formatted tabbable structure. It allows to build a wizard functionality using buttons to go through the different wizard steps and using events allows to hook into each step individually.
 
 <a href="http://vadimg.com/twitter-bootstrap-wizard-example/" target="_blank">Website & Demo</a>
 
-<a href='https://twitter.com/gabrielva' target='_blank'>Follow @gabrielva</a>
+<a href='https://twitter.com/lordelph' target='_blank'>Follow @lordelph</a>
+
+
+## Installation
+
+### Add bundle to your composer.json file
+
+``` bash
+$ php composer.phar require lordelph/bootstrap-wizard-bundle
+```
+
+### Add bundle to your application kernel
+
+``` php
+// app/AppKernel.php
+
+public function registerBundles()
+{
+    $bundles = array(
+        // ...
+        new Lordelph\BootstrapWizardBundle\LordelphBootstrapWizardBundle(),
+        // ...
+    );
+}
+```
+### Install assets
+
+Given your server's public directory is named "web", install the public vendor resources
+
+``` bash
+$ php app/console assets:install web
+```
+
+Optionally, use the --symlink attribute to create links rather than copies of the resources 
+
+``` bash
+$ php app/console assets:install --symlink web
+```
+
+## Usage
+
+Refer to the desired files in your HTML template, e.g.
+
+``` html
+<script src="{{ asset('bundles/lordelphbootstrapwizard/js/jquery-bootstrap-wizard.min.css') }}"></script>
+```
+
 
 Requirements
 -------------
 
 * Requires jQuery v1.3.2 or later
-* Bootstrap 2.2.x, 2.3.x, 3.0
+* Bootstrap 3.3
 
 Code Examples
 -------------
