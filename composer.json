@@ -1,7 +1,7 @@
 {
     "name":        "lordelph/bootstrap-wizard-bundle",
     "type":        "symfony-bundle",
-    "description": "ElphinBootstrapWizardBundle integrates Twitter Bootstrap Wizard in SF2",
+    "description": "LordelphBootstrapWizardBundle integrates Twitter Bootstrap Wizard in SF2",
     "keywords":    ["symfony", "bundle", "bootstrap", "wizard"],
     "license":     "MIT License",
 
@@ -21,9 +21,9 @@
 
     "autoload": {
         "psr-0": {
-            "Elphin\\BootstrapWizardBundle": ""
+            "Lordelph\\BootstrapWizardBundle": ""
         }
     },
 
-    "target-dir": "Elphin/BootstrapWizardBundle"
+    "target-dir": "Lordelph/BootstrapWizardBundle"
 }
