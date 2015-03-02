@@ -1,6 +1,9 @@
 Twitter Bootstrap Wizard
 ============================
 
+This bundle provides the <a href="https://github.com/VinceG/twitter-bootstrap-wizard">Bootstrap Wizard</a> in Symfony friendly form. The bundle
+itself is an adaptation of <a href="https://github.com/javihgil/bootstrap-wizard-bundle">javihgil/bootstrap-wizard-bundle</a>, this fork is simply more to date.
+
 This Twitter Bootstrap plugin builds a wizard using a formatted tabbable structure. It allows to build a wizard functionality using buttons to go through the different wizard steps and using events allows to hook into each step individually.
 
 <a href="http://vadimg.com/twitter-bootstrap-wizard-example/" target="_blank">Website & Demo</a>
@@ -48,7 +51,7 @@ Options
 			<th>Key</th>
 			<th>Default</th>
 			<th>Description</th>
-		</tr>	
+		</tr>
 	</thead>
 	<tbody>
 		<tr>
@@ -75,8 +78,8 @@ Options
 			<td>lastSelector</td>
 			<td>'.wizard li.last'</td>
 			<td>last element selector</td>
-		</tr>	
-	</tbody>	
+		</tr>
+	</tbody>
 </table>
 
 Events
@@ -124,8 +127,8 @@ Events
 		<tr>
 			<td>onTabShow</td>
 			<td>Fired when a tab content is shown (return false to disable showing that tab content)</td>
-		</tr>	
-	</tbody>	
+		</tr>
+	</tbody>
 </table>
 
 Methods
@@ -136,7 +139,7 @@ Methods
 			<th>Key</th>
 			<th>Parameters</th>
 			<th>Description</th>
-		</tr>	
+		</tr>
 	</thead>
 	<tbody>
 		<tr>
@@ -199,7 +202,7 @@ Methods
 			<td>zero based index, optinal bool remove tab-pane element or not false by default</td>
 			<td>Removes the li element from the DOM if second argument is true will also remove the tab-pane element</td>
 		</tr>
-	</tbody>	
+	</tbody>
 </table>
 
 <p>&copy; <a href='http://vadimg.com' target="_blank">Vadim Vincent Gabriel</a> <a href='https://twitter.com/gabrielva' target='_blank'>Follow @gabrielva</a> 2012</p>
