@@ -3,18 +3,18 @@
   <head>
     <title>Wizard With Finish Button On last tab</title>
     <!-- Bootstrap -->
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../prettify.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/prettify.css" rel="stylesheet">
   </head>
   <body>
     <div class='container'>
 		
-		<div class="span12">
 			<section id="wizard">
 			  <div class="page-header">
 	            <h1>Wizard With Finish Button On last tab</h1>
+	            <p>Auto-hide of Finish, Next, and Last buttons only when used with Bootstrap 3</p>
 	          </div>
-	
+
 				<div id="rootwizard">
 					<div class="navbar">
 					  <div class="navbar-inner">
@@ -58,11 +58,11 @@
 							<li class="previous"><a href="javascript:;">Previous</a></li>
 							<li class="next last"><a href="javascript:;">Last</a></li>
 						  	<li class="next"><a href="javascript:;">Next</a></li>
-							<li class="next finish" style="display:none;"><a href="javascript:;">Finish</a></li>
+							<li class="finish"><a href="javascript:;">Finish</a></li>
 						</ul>
-					</div>	
+					</div>
 				</div>
-				
+
 <h3>HTML</h3>
 <pre class="prettyprint linenums">
 &lt;div id="rootwizard">
@@ -108,9 +108,9 @@
 			&lt;li class="previous">&lt;a href="javascript:;">Previous&lt;/a>&lt;/li>
 			&lt;li class="next last">&lt;a href="javascript:;">Last&lt;/a>&lt;/li>
 		  	&lt;li class="next">&lt;a href="javascript:;">Next&lt;/a>&lt;/li>
-			&lt;li class="next finish" style="display:none;">&lt;a href="javascript:;">Finish&lt;/a>&lt;/li>
+			&lt;li class="finish">&lt;a href="javascript:;">Finish&lt;/a>&lt;/li>
 		&lt;/ul>
-	&lt;/div>	
+	&lt;/div>
 &lt;/div>
 </pre>
 
@@ -122,32 +122,20 @@ $(document).ready(function() {
 		var $current = index+1;
 		var $percent = ($current/$total) * 100;
 		$('#rootwizard').find('.bar').css({width:$percent+'%'});
-		
-		// If it's the last tab then hide the last button and show the finish instead
-		if($current >= $total) {
-			$('#rootwizard').find('.pager .next').hide();
-			$('#rootwizard').find('.pager .finish').show();
-			$('#rootwizard').find('.pager .finish').removeClass('disabled');
-		} else {
-			$('#rootwizard').find('.pager .next').show();
-			$('#rootwizard').find('.pager .finish').hide();
-		}
-		
 	}});
 	$('#rootwizard .finish').click(function() {
 		alert('Finished!, Starting over!');
 		$('#rootwizard').find("a[href*='tab1']").trigger('click');
 	});
 });
-</pre>	
-				
+</pre>
+
 			</section>
- 		</div>
 	</div>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-	<script src="../jquery.bootstrap.wizard.js"></script>
-	<script src="../prettify.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="../js/jquery.bootstrap.wizard.js"></script>
+	<script src="../js/prettify.js"></script>
 	<script>
 	$(document).ready(function() {
 	  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
@@ -155,24 +143,13 @@ $(document).ready(function() {
 			var $current = index+1;
 			var $percent = ($current/$total) * 100;
 			$('#rootwizard').find('.bar').css({width:$percent+'%'});
-			
-			// If it's the last tab then hide the last button and show the finish instead
-			if($current >= $total) {
-				$('#rootwizard').find('.pager .next').hide();
-				$('#rootwizard').find('.pager .finish').show();
-				$('#rootwizard').find('.pager .finish').removeClass('disabled');
-			} else {
-				$('#rootwizard').find('.pager .next').show();
-				$('#rootwizard').find('.pager .finish').hide();
-			}
-			
 		}});
 		$('#rootwizard .finish').click(function() {
 			alert('Finished!, Starting over!');
 			$('#rootwizard').find("a[href*='tab1']").trigger('click');
-		});	
+		});
 		window.prettyPrint && prettyPrint()
-	});	
+	});
 	</script>
   </body>
 </html>
